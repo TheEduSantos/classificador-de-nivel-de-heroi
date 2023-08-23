@@ -9,22 +9,23 @@ let nomeHeroi = "Son Goku";
 let xp = 8001;
 
 if (xp < 1000) {
-    console.log("O Herói **" + nomeHeroi + "** está no nível de Ferro e tem " + xp + " de XP"); 
+    nivel = "Ferro"; 
 } else if ( xp >= 1001 && xp <= 2000 ) {
-    console.log("O Herói **" + nomeHeroi + "** está no nível de Bronze e tem " + xp + " de XP"); 
+    nivel = "Bronze"; 
 } else if ( xp >= 2001 && xp <= 5000 ) {
-    console.log("O Herói **" + nomeHeroi + "** está no nível de Prata e tem " + xp + " de XP"); 
+    nivel = "Prata"; 
 } else if ( xp >= 5001 && xp <= 7000 ) {
-    console.log("O Herói **" + nomeHeroi + "** está no nível de Ouro e tem " + xp + " de XP"); 
+    nivel = "Ouro"; 
 } else if ( xp >= 7001 && xp <= 8000 ) {
-    console.log("O Herói **" + nomeHeroi + "** está no nível de Platina e tem " + xp + " de XP"); 
+    nivel = "Platina"; 
 } else if ( xp >= 8001 && xp <= 9000 ) {
-    console.log("O Herói **" + nomeHeroi + "** está no nível de Ascendente e tem " + xp + " de XP"); 
+    nivel = "Ascendente"; 
 } else if ( xp >= 9001 && xp <= 10000 ) {
-    console.log("O Herói **" + nomeHeroi + "** está no nível de Imortal e tem " + xp + " de XP"); 
+    nivel = "Imortal"; 
 } else if ( xp >= 10001 ) {
-    console.log("O Herói **" + nomeHeroi + "** está no nível de Radiante e tem " + xp + " de XP"); 
+    nivel = "Radiante"; 
 } else {
     console.log("Erro!!!"); 
 }
 
+console.log("O Herói **" + nomeHeroi + "** está no nível de " + nivel + " e tem " + xp + " de XP");
